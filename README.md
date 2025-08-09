@@ -2,7 +2,7 @@
 A simple AI-powered web app that helps penetration testers, students, and security enthusiasts interpret raw Nmap scan outputs into clear, beginner-friendly explanations.
 Built with React + Tailwind (frontend), Express + MongoDB (backend), and OpenAI API for AI processing.
 
-🚀 Features
+## 🚀 Features
 User Authentication (login & signup, JWT-based)
 
 Paste Nmap Output → Get AI-generated explanations
@@ -11,7 +11,7 @@ Tailwind UI for fast, responsive design
 
 Extendable → Ready for subscription/paywall integration in future
 
-📂 Project Structure
+## 📂 Project Structure
 bash
 Copy
 Edit
@@ -19,12 +19,12 @@ Edit
 /server                     # Express Backend
 /config                     # Database config
 .env                        # Environment variables
-🛠 Tech Stack
+## 🛠 Tech Stack
 Frontend: React, Vite, TailwindCSS, Axios
 Backend: Node.js, Express, MongoDB (Mongoose)
 AI: OpenAI API (GPT models)
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 1️⃣ Clone the repo
 bash
 git clone https://github.com/BesuDev195/AI-Powered-Pentest-Report-Generator.git
