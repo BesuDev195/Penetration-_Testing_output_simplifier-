@@ -1,83 +1,66 @@
-# 🤖 AI-Powered Pentest Report Generator
+ (AI-Powered) -Pentest Report Generator
+A simple AI-powered web app that helps penetration testers, students, and security enthusiasts interpret raw Nmap scan outputs into clear, beginner-friendly explanations.
+Built with React + Tailwind (frontend), Express + MongoDB (backend), and OpenAI API for AI processing.
 
-An **AI-driven Full-Stack Web Application** that helps security professionals create **detailed, professional penetration testing reports** in minutes.  
-Built with **React**, **Node.js**, **Express**, **MongoDB**, **Tailwind CSS**, and integrated **AI models** to assist in **automating vulnerability analysis and report generation**.
+🚀 Features
+User Authentication (login & signup, JWT-based)
 
----
+Paste Nmap Output → Get AI-generated explanations
 
-## 🚀 Key Features
+Tailwind UI for fast, responsive design
 
-- **AI-Assisted Reporting** – Automatically generate detailed vulnerability descriptions, impact analysis, and remediation steps using AI.
-- **Dynamic Report Creation** – Add, edit, and manage pentest findings with an intuitive UI.
-- **Template-Based PDF Output** – Export clean, client-ready reports instantly.
-- **Full-Stack Architecture** – React frontend + Express/MongoDB backend.
-- **Responsive & Modern UI** – Built with Tailwind CSS for a sleek and mobile-friendly experience.
-- **Role-Based Authentication** – Secure login system for testers and managers.
-- **Evidence Upload** – Attach screenshots or proof-of-concept files to findings.
-- **Search & Filter** – Quickly find specific vulnerabilities in large reports.
-- **Export Options** – PDF, and planned DOCX support.
-- **Customizable Report Templates** – Match your company’s branding.
+Extendable → Ready for subscription/paywall integration in future
 
----
+📂 Project Structure
+bash
+Copy
+Edit
+/client                     # React + Tailwind Frontend
+/server                     # Express Backend
+/config                     # Database config
+.env                        # Environment variables
+🛠 Tech Stack
+Frontend: React, Vite, TailwindCSS, Axios
+Backend: Node.js, Express, MongoDB (Mongoose)
+AI: OpenAI API (GPT models)
 
-## 🛠 Tech Stack
-
-### **Frontend**
-- ⚛️ [React](https://reactjs.org/) – Component-based UI
-- 🎨 [Tailwind CSS](https://tailwindcss.com/) – Modern, responsive styling
-- 📦 [Axios](https://axios-http.com/) – HTTP requests to backend
-- 📄 [React Router](https://reactrouter.com/) – Routing between pages
-
-### **Backend**
-- 🟢 [Node.js](https://nodejs.org/) – JavaScript runtime
-- 🚏 [Express.js](https://expressjs.com/) – API and server handling
-- 🍃 [MongoDB](https://www.mongodb.com/) – NoSQL database
-- 🔐 [JWT](https://jwt.io/) – Authentication
-- 🤖 **AI Integration** – OpenAI API / custom NLP models for text generation
-
----
-
-
----
-
-## ⚡ Installation & Setup
-
-### **1️⃣ Clone the Repository**
-```bash
+⚙️ Setup Instructions
+1️⃣ Clone the repo
+bash
 git clone https://github.com/BesuDev195/AI-Powered-Pentest-Report-Generator.git
-cd AI-Powered-Pentest-Report-Generator
+cd pentest-report-generator
+2️⃣ Install dependencies
+Frontend
 
+bash
 cd client
 npm install
 
-cd ../backend
+Backend
+cd ../server
 npm install
+3️⃣ Configure .env
+Create a .env file in /server:
 
+ini
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-OPENAI_API_KEY=your_openai_api_key
-
-Open two terminals:
-
-Frontend:
+MONGO_URI=your-mongodb-uri
+JWT_SECRET=your-secret
+OPENAI_API_KEY=your-openai-api-key
+4️⃣ Run the app
+Backend
 
 bash
-cd frontend
+cd server
 npm run dev
-Backend:
+Frontend
 
 bash
-cd backend
-npm start
+cd client
+npm run dev
+🔮 Future Improvements
+Payment gateway (Stripe) for subscription
 
-🤝 Contributing
-Fork the repo
+File upload support for scan results
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
+Support for multiple scan tools (Nessus, Nikto, etc.)
