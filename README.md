@@ -33,11 +33,11 @@ cd pentest-report-generator
 Frontend
 
 bash
-cd client
+# cd frontend
 npm install
 
 Backend
-cd ../server
+# cd ../backend
 npm install
 3️⃣ Configure .env
 Create a .env file in /server:
