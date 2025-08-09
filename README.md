@@ -1,4 +1,4 @@
- (AI-Powered) -Pentest Report Generator
+## (AI-Powered) -Pentest Report Generator
 A simple AI-powered web app that helps penetration testers, students, and security enthusiasts interpret raw Nmap scan outputs into clear, beginner-friendly explanations.
 Built with React + Tailwind (frontend), Express + MongoDB (backend), and OpenAI API for AI processing.
 
